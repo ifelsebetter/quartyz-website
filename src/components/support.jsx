@@ -1,12 +1,12 @@
 import React from "react";
-import { IoCaretBackOutline } from "react-icons/io5";
+import { IoArrowBackOutline } from "react-icons/io5";
 
 const Support = () => {
   return (
     <div className="max-w-3xl mx-auto my-20 px-4">
       <div className="flex justify-start items-center mb-6">
         <a href="/">
-          <IoCaretBackOutline className="text-2xl" />
+          <IoArrowBackOutline className="text-2xl" />
         </a>
       </div>
       <div>
