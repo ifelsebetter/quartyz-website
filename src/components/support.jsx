@@ -12,6 +12,7 @@ const Support = () => {
           <span className="ml-2">Support</span>
         </div>
       </div>
+      
       <div>
         <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
         <div className="mb-8">
@@ -29,6 +30,7 @@ const Support = () => {
           </div>
         </div>
       </div>
+
       <div className="mb-8">
         <h2 className="text-2xl font-bold">Common Problems :</h2>
         <div className="mt-4">
@@ -54,6 +56,7 @@ const Support = () => {
           </ol>
         </div>
       </div>
+
       <div className="mb-8">
         <h2 className="text-2xl font-bold">Reporting Bugs or Issues :</h2>
         <div className="mt-4">
@@ -63,6 +66,7 @@ const Support = () => {
           </p>
         </div>
       </div>
+
       <div>
         <h2 className="text-2xl font-bold">Need Help?</h2>
         <div className="mt-4">

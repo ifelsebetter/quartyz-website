@@ -43,6 +43,7 @@ const Feature = () => {
           <span className="ml-2">Feature</span>
         </div>
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {features.map((item, index) => (
           <div key={index} className="bg-black rounded-lg p-4 shadow-md">
@@ -59,6 +60,7 @@ const Feature = () => {
           </div>
         ))}
       </div>
+      
     </div>
   );
 };
