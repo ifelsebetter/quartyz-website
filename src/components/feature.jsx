@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoArrowBackOutline } from 'react-icons/io5';
 
 const Feature = () => {
@@ -11,6 +11,28 @@ const Feature = () => {
     { map: 'Anime Adventure', image: 'anime-adventure.jpg', link: 'https://www.roblox.com/games/8304191830' },
   ];
 
+  const [imageCache, setImageCache] = useState({});
+
+  useEffect(() => {
+    const preLoadImages = async () => {
+      const promises = features.map(async (item) => {
+        const imageSrc = await import(`../assets/${item.image}`);
+        setImageCache((prevCache) => ({
+          ...prevCache,
+          [item.image]: imageSrc.default,
+        }));
+      });
+
+      await Promise.all(promises);
+    };
+
+    preLoadImages();
+  }, []);
+
+  const getImageSource = (imageName) => {
+    return imageCache[imageName];
+  };
+
   return (
     <div className="max-w-3xl mx-auto my-20 px-4">
       <div className="flex justify-start items-center mb-10">
@@ -22,7 +44,7 @@ const Feature = () => {
         {features.map((item, index) => (
           <div key={index} className="bg-black rounded-lg p-4 shadow-md">
             <img
-              src={require(`../assets/${item.image}`)}
+              src={getImageSource(item.image)}
               alt={item.map}
               className="w-full h-40 object-cover mb-4 rounded-lg"
             />
