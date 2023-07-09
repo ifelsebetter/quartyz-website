@@ -26,7 +26,6 @@ const Main = () => {
               "Enjoy using the script!"
             ]}
             typeSpeed={65}
-            backDelay={15}
             backSpeed={65}
             loop
           />
