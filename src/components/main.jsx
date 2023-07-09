@@ -2,11 +2,11 @@ import React from "react";
 import Typed from "react-typed";
 
 const Main = () => {
-  const sclink = () => {
-    const scriptlink =
-      'loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()';
+  const copyScriptLink = () => {
+    const scriptLink =
+      'loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader"))()';
     navigator.clipboard
-      .writeText(scriptlink)
+      .writeText(scriptLink)
       .then(() => {
         alert("Script copied to the clipboard");
       })
@@ -19,43 +19,45 @@ const Main = () => {
     <div className="text-white text-center">
       <div className="max-w-[790px] mt-[-50px] w-full h-screen mx-auto flex flex-col justify-center">
         <div className="md:text-5xl sm:text-6xl font-bold md:py-6">
-          <Typed strings={["Quartyz | Mukuro"]} typeSpeed={120} />
+          <Typed
+            strings={[
+              "Quartyz | Mukuro hub script",
+              "Supports multiple maps",
+              "Enjoy using the script!"
+            ]}
+            typeSpeed={65}
+            backDelay={15}
+            backSpeed={65}
+            loop
+          />
         </div>
-        <div className="justify-center flex flex-wrap space-x-4 space-y-2 md:space-y-0 md:space-x-2 font-mono">
-          <div className="w-full md:w-auto">
-            <button
-              className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline"
-              onClick={sclink}
-            >
-              Script
-            </button>
-          </div>
-          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
-            <a
-              href="https://quartyz.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+        <div className="flex justify-center items-center space-x-4 space-y-2 md:space-y-0 md:space-x-2 font-mono">
+          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-4 py-2 hover:underline" onClick={copyScriptLink}>
+            Get Script
+          </button>
+          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-4 py-2 hover:underline">
+            <a href="https://quartyz.dev/" target="_blank" rel="noopener noreferrer" className="text-white" >
               Get Key
             </a>
           </button>
-          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
-            <a
-              href="https://discord.gg/nFpQXeG38x"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-4 py-2 hover:underline">
+            <a href="https://discord.gg/nFpQXeG38x" target="_blank" rel="noopener noreferrer" className="text-white">
               Discord
             </a>
           </button>
-          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
-            <a href="/feature" rel="noopener noreferrer">
+          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-4 py-2 hover:underline">
+            <a href="/feature" rel="noopener noreferrer" className="text-white">
               Feature
             </a>
           </button>
-          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
-            <a href="/support" rel="noopener noreferrer">
+          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-4 py-2 hover:underline">
+            <a href="/support" rel="noopener noreferrer" className="text-white">
               Support
+            </a>
+          </button>
+          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-4 py-2 hover:underline">
+            <a href="/member" rel="noopener noreferrer" className="text-white">
+              Member
             </a>
           </button>
         </div>

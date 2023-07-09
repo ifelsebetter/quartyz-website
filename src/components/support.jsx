@@ -4,10 +4,13 @@ import { IoArrowBackOutline } from "react-icons/io5";
 const Support = () => {
   return (
     <div className="max-w-3xl mx-auto my-20 px-4">
-      <div className="flex justify-start items-center mb-6">
-        <a href="/">
-          <IoArrowBackOutline className="text-2xl" />
-        </a>
+      <div className="text-3xl font-bold mb-6">
+        <div className="flex justify-start items-center mb-10">
+          <a href="/">
+            <IoArrowBackOutline className="text-2xl" />
+          </a>
+          <span className="ml-2">Support</span>
+        </div>
       </div>
       <div>
         <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>

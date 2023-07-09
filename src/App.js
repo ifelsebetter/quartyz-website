@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/main'
 import Support from './components/support';
 import Feature from './components/feature';
+import Member from './components/member';
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/support' element={<Support />} />
         <Route path='/feature' element={<Feature />} />
+        <Route path='/member' element={<Member />} />
       </Routes>
     </Router>
   )
