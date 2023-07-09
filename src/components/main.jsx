@@ -1,15 +1,17 @@
-import React from 'react';
-import Typed from 'react-typed';
+import React from "react";
+import Typed from "react-typed";
 
 const Main = () => {
   const sclink = () => {
-    const scriptlink = 'loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()';
-    navigator.clipboard.writeText(scriptlink)
+    const scriptlink =
+      'loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()';
+    navigator.clipboard
+      .writeText(scriptlink)
       .then(() => {
-        alert('Script copied to the clipboard');
+        alert("Script copied to the clipboard");
       })
       .catch((error) => {
-        console.error('Failed to copy URL to the clipboard:', error);
+        console.error("Failed to copy URL to the clipboard:", error);
       });
   };
 
@@ -19,18 +21,36 @@ const Main = () => {
         <div className="md:text-5xl sm:text-6xl font-bold md:py-6">
           <Typed strings={["Quartyz | Mukuro"]} typeSpeed={120} />
         </div>
-        <div className="justify-center flex space-x-4 font-mono">
-          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline" onClick={sclink}>
-            Script
-          </button>
+        <div className="justify-center flex flex-wrap space-x-4 space-y-2 md:space-y-0 md:space-x-2 font-mono">
+          <div className="w-full md:w-auto">
+            <button
+              className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline"
+              onClick={sclink}
+            >
+              Script
+            </button>
+          </div>
           <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
-            <a href="https://quartyz.dev/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://quartyz.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Get Key
             </a>
           </button>
           <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
-            <a href="https://discord.gg/nFpQXeG38x" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://discord.gg/nFpQXeG38x"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Discord
+            </a>
+          </button>
+          <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
+            <a href="/feature" rel="noopener noreferrer">
+              Feature
             </a>
           </button>
           <button className="rounded-lg bg-black border-2 border-cyan-50 text-lg px-2 py-1 hover:underline">
