@@ -18,7 +18,7 @@ const Main = () => {
   return (
     <div className="text-white text-center">
       <div className="max-w-[790px] mt-[-50px] w-full h-screen mx-auto flex flex-col justify-center">
-        <div className="md:text-5xl sm:text-6xl font-bold md:py-6 font-mono">
+        <div className="md:text-5xl sm:text-6xl font-bold md:py-6">
           <Typed
             strings={[
               "Quartyz | Mukuro hub script",
