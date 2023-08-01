@@ -18,7 +18,7 @@ const Feature = () => {
         'Devil Fruit Shop Sniper',
         'ESP',
       ],
-    },
+    }, /*
     {
       map: 'Pet Simulator X!',
       image: 'https://tr.rbxcdn.com/0f57b4f93acef9a33f6441909990ada6/512/512/Image/Png',
@@ -50,7 +50,7 @@ const Feature = () => {
         'Auto Buy Weapon',
         'ESP',
       ],
-    },
+    }, */
     {
       map: 'Build A Boat For Treasure',
       image: 'https://tr.rbxcdn.com/72981f2994d85aace15563551965aae8/512/512/Image/Png',
@@ -59,7 +59,7 @@ const Feature = () => {
         'Auto Farm',
         'ESP',
       ],
-    },
+    }, /*
     {
       map: 'Anime Adventure',
       image: 'https://tr.rbxcdn.com/7b6a3914cac2e93f7e7f27cbefa92280/512/512/Image/Png',
@@ -69,7 +69,7 @@ const Feature = () => {
         'Macro Record/Play',
         'Auto Open Unit',
       ],
-    },
+    }, */
   ], []);
 
   return (
